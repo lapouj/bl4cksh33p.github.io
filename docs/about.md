@@ -13,28 +13,27 @@ Chacun apporte sa spécialité au troupeau noir.
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
 
 <div style="flex: 1 1 45%; border: 1px solid #444; padding: 1rem; border-radius: 8px;">
-<h3>Jordan "SheepX"</h3>
-<p><strong>Spécialité :</strong> Web Hacking, OSINT</p>
-<p>Jordan excelle dans le bug bounty et le décryptage de systèmes web complexes.  
-Il adore fouiller les moindres recoins d'une appli.</p>
+<h3>Jordan "Lapouj"</h3>
+<p><strong>Spécialité :</strong>OS, HTB</p>
+<p>Lorem ipsum.</p>
 </div>
 
 <div style="flex: 1 1 45%; border: 1px solid #444; padding: 1rem; border-radius: 8px;">
-<h3>Marie "Root3lla"</h3>
-<p><strong>Spécialité :</strong> Reverse Engineering, Binary Exploits</p>
-<p>Marie démonte les binaires comme personne. Elle adore Ghidra, les ELF piégés, et faire parler l’ASM.</p>
+<h3>Florent "Gay"</h3>
+<p><strong>Spécialité :</strong>Reverse Engineering, Binary Exploits</p>
+<p>Blabla.</p>
 </div>
 
 <div style="flex: 1 1 45%; border: 1px solid #444; padding: 1rem; border-radius: 8px;">
-<h3>Yanis "0xSheep"</h3>
-<p><strong>Spécialité :</strong> Linux Post-Exploitation, PrivEsc</p>
-<p>Yanis aime les escalades de privilèges, les shells sales, et tout ce qui est low-level sur Linux.</p>
+<h3>Paul "Hentai"</h3>
+<p><strong>Spécialité :</strong>Web, GOAT</p>
+<p>blabla.</p>
 </div>
 
 <div style="flex: 1 1 45%; border: 1px solid #444; padding: 1rem; border-radius: 8px;">
-<h3>Sarah "Ph4nTom"</h3>
-<p><strong>Spécialité :</strong> Crypto, Forensics</p>
-<p>Sarah déchiffre des secrets en hex et trouve des drapeaux là où même les logs sont effacés.</p>
+<h3>Aubin "Fils"</h3>
+<p><strong>Spécialité :</strong>Osint, Stegano</p>
+<p>blabla</p>
 </div>
 
 </div>
