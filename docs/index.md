@@ -1,9 +1,7 @@
 # 🐏 Bl4ckSh33p
 
-![Bl4ckSh33p logo](images/bl4cksh33p_logo.png)
-
 <p align="center">
-  <img src="images/bl4cksh33p_logo.png" alt="Bl4ckSh33p logo" width="200"/>
+  <img src="images/bl4cksh33p_logo_bgblack.png" alt="Bl4ckSh33p logo" width="80%"/>
 </p>
 
 
