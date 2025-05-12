@@ -4,7 +4,7 @@ Nous sommes une équipe passionnée de **CTF**, **pentest** et **cybersécurité
 Chacun apporte sa spécialité au troupeau noir.
 
 <p align="center">
-  <img src="images/blacksheep_written.gif" alt="Bl4ckSh33p" width="80%"/>
+  <img src="images/blacksheep_gif.gif" alt="Bl4ckSh33p" width="80%"/>
 </p>
 
 
