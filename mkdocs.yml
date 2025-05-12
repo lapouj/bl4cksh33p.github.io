@@ -2,8 +2,8 @@ site_name: Bl4ckSh33p
 site_url: https://bl4cksh33p.github.io
 theme:
   name: material
-  logo: docs/images/bl4cksh33p_logo.png
-  favicon: docs/images/bl4cksh33p_logo.png
+  logo: images/bl4cksh33p_logo.png
+  favicon: images/bl4cksh33p_logo.png
   palette:
     primary: black
     accent: deep purple
