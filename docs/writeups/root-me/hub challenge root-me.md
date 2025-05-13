@@ -1,11 +1,6 @@
 #informatique/cyber 
 #rootme 
 
-
-[lien](youtube.com)
-
-
-
 docs a faire : 
 
 [[fichier a l'arrache]]

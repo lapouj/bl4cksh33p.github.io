@@ -56,9 +56,14 @@ nav:
       - XMPP - Authentification: writeups/root-me/XMPP - Authentification.md
       - XSS - Dom Based: writeups/root-me/XSS - Dom Based.md
       - XSS - Server Side: writeups/root-me/XSS - Server Side.md
-      - Injection SQL - Contournement de filtres: writeups/root-me/sql-injection.md
-    - TryHackMe: test.md
-    - CTF: test.md
+      - Injection SQL - Contournement de filtres: writeups/root-me/sql-injection-contournement-de-filtres.md
+    - TryHackMe:
+      - Gobuster RCE challenge: writeups/THM/Gobuster RCE challenge.md
+    - CTF:
+      - THCON 25 CTF - Challenge NeoPrivsec: writeups/THM/THCON 25 CTF - Challenge NeoPrivsec.md
+    - Conférences:
+      - Supply chain security in Kubernetes: writeups/conference/Supply chain security in Kubernetes.md
+      - Tapping into the SCCM policies goldmine - exploiting SCCM policies distribution for credentials harvesting: writeups/conference/Tapping into the SCCM policies goldmine - exploiting SCCM policies distribution for credentials harvesting.md
   - Cheatsheets:
     - NMAP: cheatsheets/nmap.md
   - Training:
