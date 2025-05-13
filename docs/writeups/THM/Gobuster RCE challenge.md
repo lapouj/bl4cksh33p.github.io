@@ -26,13 +26,13 @@ gobuster dir -u http://shell.uploadvulns.thm/ -w /usr/share/wordlists/dirbuster/
 
 Cette commande va permettre d'énumérer des répertoires précis d'un site web à l'aide d'une liste.
 
-![[../../images/Challenge gobuster 1.png]]
+![Challenge gobuster 1](../../images/Challenge%20gobuster%201.png)
 
 Ce qui va être utile ici est /ressources
 
 Avant de voir ce chemin, il faut tenter d'upload un fichier:
 
-![[../../images/Challenge gobuster 3.png]]
+![Challenge gobuster 1](../../images/Challenge%20gobuster%203.png)
 
 Upload d'un webshell, contenu:
 
@@ -52,12 +52,12 @@ https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-rev
 
 Le principe est le même, il faut upload son script sur le serveur et l'exécuter. 
 
-![[../../images/Challenge gobuster 3.png]]
+![Challenge gobuster 1](../../images/Challenge%20gobuster%203.png)
 
+![Challenge gobuster 1](../../images/Challenge%20gobuster%204.png)
 
-![[../../images/Challenge gobuster 4.png]]
+![Challenge gobuster 1](../../images/Challenge%20gobuster%205.png)
 
-![[../../images/Challenge gobuster 5.png]]
 On trouve le flag comme indiqué dans /var/www/
 
-![[../../images/Challenge gobuster 2.png]]
+![Challenge gobuster 1](../../images/Challenge%20gobuster%202.png)
