@@ -1,4 +1,4 @@
-<script src="/js/password-protect.js"></script>
+<script src="../../js/password-protect.js"></script>
 
 ---
 categorie: web-serveur
