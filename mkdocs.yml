@@ -15,5 +15,6 @@ nav:
       - TryHackMe: writeups/thm.md
       - CTF: writeups/ctf.md
   - Cheatsheets: cheatsheets/index.md
+      - NMAP: cheatsheets/nmap.md
   - Training: training/index.md
   - À propos: about.md
