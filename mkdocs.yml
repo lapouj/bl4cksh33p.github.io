@@ -18,5 +18,5 @@ nav:
       - NMAP: cheatsheets/nmap.md
   - Training:
       - Web Exploitation:
-          - Injection SQL: training/web-exploitation/sql-injction.md
+          - Injection SQL: training/web-exploitation/sql-injection.md
   - À propos: about.md
