@@ -98,3 +98,4 @@ Il faut ensuite tester avec des caractères url encodés, au cas ou il y aurai d
 |%27%20OR%20ASCII%28SUBSTRING%28%28SELECT%20database%28%29%29%2C1%2C1%29%29%3E64--|
 |%27%20OR%20LENGTH%28%28SELECT%20table_name%20FROM%20information_schema.tables%20LIMIT%201%29%29%3E1--|
 ... (20lignes restantes)
+```
