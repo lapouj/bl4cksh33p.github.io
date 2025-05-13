@@ -25,26 +25,14 @@ h1, h2, h3 {
   from { width: 0 }
   to { width: 100% }
 }
-
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #00ffcc; }
 }
 
-.glitch-text {
-  position: relative;
+.glitch-char {
   display: inline-block;
-  color: #00ffcc;
-  animation: glitch 2s infinite;
-}
-
-@keyframes glitch {
-  0% { content: '█'; }
-  20% { text-shadow: 1px 0 red; transform: translateX(-1px); }
-  40% { text-shadow: -1px 0 blue; transform: translateX(1px); }
-  60% { text-shadow: 1px 0 lime; transform: translateX(-1px); }
-  80% { text-shadow: -1px 0 magenta; transform: translateX(1px); }
-  100% { text-shadow: 0 0 0; transform: translateX(0); }
+  transition: 0.1s ease;
 }
 
 .member-card {
@@ -70,12 +58,8 @@ h1, h2, h3 {
 }
 </style>
 
-<p class="glitch-text">Nous sommes une équipe passionnée de <strong>CTF</strong>, <strong>pentest</strong> et <span class="glitch-text">cybersécurité offensive</span>.</p>
-<p>Chacun apporte sa spécialité au <span class="glitch-text">troupeau noir</span>.</p>
-
-<p align="center">
-  <img src="../images/blacksheep_gif.gif" alt="Bl4ckSh33p" width="70%" style="border-radius: 16px; box-shadow: 0 0 20px #00ffcc;"/>
-</p>
+<p>Nous sommes une équipe passionnée de <strong>CTF</strong>, <strong>pentest</strong> et <span id="glitch-text">cybersécurité offensive</span>.  
+Chacun apporte sa spécialité au troupeau noir.</p>
 
 ## L'Équipe
 
@@ -105,4 +89,36 @@ h1, h2, h3 {
     <p>Il voit ce que personne ne voit. Même dans un pixel noir sur fond noir.</p>
 </div>
 
+<p align="center">
+  <img src="../images/blacksheep_gif.gif" alt="Bl4ckSh33p" width="70%" style="border-radius: 16px; box-shadow: 0 0 20px #00ffcc;"/>
+</p>
+
 </div>
+
+<script>
+const target = document.getElementById("glitch-text");
+const original = target.textContent;
+const chars = "@#$%&*?!§+=<>µ£¥";
+
+function glitchText() {
+  let glitched = "";
+
+  for (let i = 0; i < original.length; i++) {
+    if (Math.random() < 0.15 && original[i] !== " ") {
+      glitched += chars[Math.floor(Math.random() * chars.length)];
+    } else {
+      glitched += original[i];
+    }
+  }
+
+  target.textContent = glitched;
+
+  setTimeout(() => {
+    target.textContent = original;
+  }, 100);
+
+  setTimeout(glitchText, 300 + Math.random() * 700);
+}
+
+glitchText();
+</script>
