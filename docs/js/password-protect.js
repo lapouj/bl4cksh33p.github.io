@@ -6,6 +6,6 @@
   if (password === "Bl4ckSh33pCTFSolved") {
     sessionStorage.setItem("writeups_access", "true");
   } else {
-    window.location.href = "/";
+    window.location.href = "https://lapouj.github.io/bl4cksh33p.github.io/";
   }
 })();
