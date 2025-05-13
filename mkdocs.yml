@@ -14,7 +14,7 @@ nav:
       - RootMe: writeups/rootme.md
       - TryHackMe: writeups/thm.md
       - CTF: writeups/ctf.md
-  - Cheatsheets: cheatsheets/index.md
+  - Cheatsheets:
       - NMAP: cheatsheets/nmap.md
   - Training: training/index.md
   - À propos: about.md
