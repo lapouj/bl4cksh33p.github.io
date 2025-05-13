@@ -10,13 +10,13 @@ theme:
 nav:
   - Accueil: index.md
   - Writeups:
-      - HackTheBox: writeups/htb.md
-      - RootMe: writeups/rootme.md
-      - TryHackMe: writeups/thm.md
-      - CTF: writeups/ctf.md
+      - HackTheBox:
+      - RootMe:
+          - Injection SQL - Contournement de filtres: writeups/root-me/sql-injection.md
+      - TryHackMe:
+      - CTF:
   - Cheatsheets:
       - NMAP: cheatsheets/nmap.md
   - Training:
       - Web Exploitation:
-          - Injection SQL: training/web-exploitation/sql-injection.md
   - À propos: about.md
