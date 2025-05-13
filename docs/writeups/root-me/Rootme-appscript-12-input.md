@@ -1,3 +1,5 @@
+<script src="../../../js/password-protect.js"></script>
+
 ---
 categorie: app-script
 ---
