@@ -16,5 +16,7 @@ nav:
       - CTF: writeups/ctf.md
   - Cheatsheets:
       - NMAP: cheatsheets/nmap.md
-  - Training: training/index.md
+  - Training:
+      - Web Exploitation:
+          - Injection SQL: training/web-exploitation/sql-inection.md
   - À propos: about.md
