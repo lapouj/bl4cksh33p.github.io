@@ -68,4 +68,8 @@ nav:
     - NMAP: cheatsheets/nmap.md
   - Training:
     - Web Exploitation: test.md
+    - Présentations: 
+      - Présentation Metasploit: training/tools/Présentation Metasploit.pdf
+      - Présentation Suricata: training/tools/Présentation Suricata.pdf
+      - Présentation Wireshark: training/tools/Présentation Wireshark.pdf
   - À propos: about.md
