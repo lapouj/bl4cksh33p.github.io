@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://bl4cksh33p.github.io/cheatsheets/nmap/">
+        <link rel="canonical" href="https://bl4cksh33p.github.io/writeups/root-me/CRLF/">
       
       
-        <link rel="prev" href="../../writeups/root-me/XSS%20-%20Server%20Side/">
+        <link rel="prev" href="../chal-5/">
       
       
-        <link rel="next" href="../../about/">
+        <link rel="next" href="../directory-transversal/">
       
       
-      <link rel="icon" href="../../images/bl4cksh33p_logo.png">
+      <link rel="icon" href="../../../images/bl4cksh33p_logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.13">
     
     
       
-        <title>NMAP - Bl4ckSh33p</title>
+        <title>CRLF - Bl4ckSh33p</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nmap-cheatsheet-scanning-output-performance" class="md-skip">
+        <a href="#but" class="md-skip">
           Skip to content
         </a>
       
@@ -88,9 +88,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Bl4ckSh33p" class="md-header__button md-logo" aria-label="Bl4ckSh33p" data-md-component="logo">
+    <a href="../../.." title="Bl4ckSh33p" class="md-header__button md-logo" aria-label="Bl4ckSh33p" data-md-component="logo">
       
-  <img src="../../images/bl4cksh33p_logo.png" alt="logo">
+  <img src="../../../images/bl4cksh33p_logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NMAP
+              CRLF
             
           </span>
         </div>
@@ -185,9 +185,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Bl4ckSh33p" class="md-nav__button md-logo" aria-label="Bl4ckSh33p" data-md-component="logo">
+    <a href="../../.." title="Bl4ckSh33p" class="md-nav__button md-logo" aria-label="Bl4ckSh33p" data-md-component="logo">
       
-  <img src="../../images/bl4cksh33p_logo.png" alt="logo">
+  <img src="../../../images/bl4cksh33p_logo.png" alt="logo">
 
     </a>
     Bl4ckSh33p
@@ -202,7 +202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -221,18 +221,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -248,7 +250,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Writeups
@@ -262,7 +264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../test.md" class="md-nav__link">
+      <a href="../../../test.md" class="md-nav__link">
         
   
   
@@ -282,18 +284,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -309,7 +313,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             root-me
@@ -323,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/api-broken-access/" class="md-nav__link">
+      <a href="../api-broken-access/" class="md-nav__link">
         
   
   
@@ -346,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/api-mass-assignment/" class="md-nav__link">
+      <a href="../api-mass-assignment/" class="md-nav__link">
         
   
   
@@ -369,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/bash-system1/" class="md-nav__link">
+      <a href="../bash-system1/" class="md-nav__link">
         
   
   
@@ -392,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/chal-5/" class="md-nav__link">
+      <a href="../chal-5/" class="md-nav__link">
         
   
   
@@ -412,10 +416,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../writeups/root-me/CRLF/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -426,6 +439,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -438,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/directory-transversal/" class="md-nav__link">
+      <a href="../directory-transversal/" class="md-nav__link">
         
   
   
@@ -461,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/ELF-x64-basic-heap-overflow/" class="md-nav__link">
+      <a href="../ELF-x64-basic-heap-overflow/" class="md-nav__link">
         
   
   
@@ -484,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/ELF-x64-stack-buffer-overflow-basic-2/" class="md-nav__link">
+      <a href="../ELF-x64-stack-buffer-overflow-basic-2/" class="md-nav__link">
         
   
   
@@ -507,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/file-upload-null-byte/" class="md-nav__link">
+      <a href="../file-upload-null-byte/" class="md-nav__link">
         
   
   
@@ -530,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/file-upload-type-MIME/" class="md-nav__link">
+      <a href="../file-upload-type-MIME/" class="md-nav__link">
         
   
   
@@ -553,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/flask-unsecure-session/" class="md-nav__link">
+      <a href="../flask-unsecure-session/" class="md-nav__link">
         
   
   
@@ -576,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/HTTP-DNS-Rebinding/" class="md-nav__link">
+      <a href="../HTTP-DNS-Rebinding/" class="md-nav__link">
         
   
   
@@ -599,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/hub%20challenge%20root-me/" class="md-nav__link">
+      <a href="../hub%20challenge%20root-me/" class="md-nav__link">
         
   
   
@@ -622,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Insecure-code-management/" class="md-nav__link">
+      <a href="../Insecure-code-management/" class="md-nav__link">
         
   
   
@@ -645,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/install%20files/" class="md-nav__link">
+      <a href="../install%20files/" class="md-nav__link">
         
   
   
@@ -668,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/JWT-Unsecure-File-Signature-1/" class="md-nav__link">
+      <a href="../JWT-Unsecure-File-Signature-1/" class="md-nav__link">
         
   
   
@@ -691,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/JWT-Unsecure-File-Signature/" class="md-nav__link">
+      <a href="../JWT-Unsecure-File-Signature/" class="md-nav__link">
         
   
   
@@ -714,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Local-File-Inclusion-Double-encoding/" class="md-nav__link">
+      <a href="../Local-File-Inclusion-Double-encoding/" class="md-nav__link">
         
   
   
@@ -737,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Local-File-Inclusion/" class="md-nav__link">
+      <a href="../Local-File-Inclusion/" class="md-nav__link">
         
   
   
@@ -760,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/multiples%20codages/" class="md-nav__link">
+      <a href="../multiples%20codages/" class="md-nav__link">
         
   
   
@@ -783,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Nginx-Alias-Misconfiguration/" class="md-nav__link">
+      <a href="../Nginx-Alias-Misconfiguration/" class="md-nav__link">
         
   
   
@@ -806,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Nginx-root-location-misconfiguration/" class="md-nav__link">
+      <a href="../Nginx-root-location-misconfiguration/" class="md-nav__link">
         
   
   
@@ -829,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/NoSQL-injection-Authentification/" class="md-nav__link">
+      <a href="../NoSQL-injection-Authentification/" class="md-nav__link">
         
   
   
@@ -852,7 +866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/OSPF-Authentification/" class="md-nav__link">
+      <a href="../OSPF-Authentification/" class="md-nav__link">
         
   
   
@@ -875,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/PE32-Stack-buffer-overflow-basic/" class="md-nav__link">
+      <a href="../PE32-Stack-buffer-overflow-basic/" class="md-nav__link">
         
   
   
@@ -898,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/PHP-assert/" class="md-nav__link">
+      <a href="../PHP-assert/" class="md-nav__link">
         
   
   
@@ -921,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/programmation/" class="md-nav__link">
+      <a href="../programmation/" class="md-nav__link">
         
   
   
@@ -944,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/PyRat-Ench%C3%A8res/" class="md-nav__link">
+      <a href="../PyRat-Ench%C3%A8res/" class="md-nav__link">
         
   
   
@@ -967,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Remote-File-Inclusion/" class="md-nav__link">
+      <a href="../Remote-File-Inclusion/" class="md-nav__link">
         
   
   
@@ -990,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/root-me/" class="md-nav__link">
+      <a href="../root-me/" class="md-nav__link">
         
   
   
@@ -1013,7 +1027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Rootme-appscript-12-input/" class="md-nav__link">
+      <a href="../Rootme-appscript-12-input/" class="md-nav__link">
         
   
   
@@ -1036,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Rootme-cryptanalyse-5-Hash-LM/" class="md-nav__link">
+      <a href="../Rootme-cryptanalyse-5-Hash-LM/" class="md-nav__link">
         
   
   
@@ -1059,7 +1073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/rootmechallenge%20-%20CSRF%20-%200%20protection/" class="md-nav__link">
+      <a href="../rootmechallenge%20-%20CSRF%20-%200%20protection/" class="md-nav__link">
         
   
   
@@ -1082,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/rootmechallenge%20-%20CSRF%20-%20contournement%20de%20jeton/" class="md-nav__link">
+      <a href="../rootmechallenge%20-%20CSRF%20-%20contournement%20de%20jeton/" class="md-nav__link">
         
   
   
@@ -1105,7 +1119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/SQL-injection-Authentification-2/" class="md-nav__link">
+      <a href="../SQL-injection-Authentification-2/" class="md-nav__link">
         
   
   
@@ -1128,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/SQL-injection-Authentification-GBK/" class="md-nav__link">
+      <a href="../SQL-injection-Authentification-GBK/" class="md-nav__link">
         
   
   
@@ -1151,7 +1165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/SQL-injection-Authentification/" class="md-nav__link">
+      <a href="../SQL-injection-Authentification/" class="md-nav__link">
         
   
   
@@ -1174,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/sql-injection-contournement-de-filtres/" class="md-nav__link">
+      <a href="../sql-injection-contournement-de-filtres/" class="md-nav__link">
         
   
   
@@ -1197,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/SQL-injection-Num%C3%A9rique/" class="md-nav__link">
+      <a href="../SQL-injection-Num%C3%A9rique/" class="md-nav__link">
         
   
   
@@ -1220,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/SQL-injection-String/" class="md-nav__link">
+      <a href="../SQL-injection-String/" class="md-nav__link">
         
   
   
@@ -1243,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/Trafic%20Global%20System%20for%20Mobile%20communications/" class="md-nav__link">
+      <a href="../Trafic%20Global%20System%20for%20Mobile%20communications/" class="md-nav__link">
         
   
   
@@ -1266,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/XMPP%20-%20Authentification/" class="md-nav__link">
+      <a href="../XMPP%20-%20Authentification/" class="md-nav__link">
         
   
   
@@ -1289,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/XSS%20-%20Dom%20Based/" class="md-nav__link">
+      <a href="../XSS%20-%20Dom%20Based/" class="md-nav__link">
         
   
   
@@ -1312,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/XSS%20-%20Server%20Side/" class="md-nav__link">
+      <a href="../XSS%20-%20Server%20Side/" class="md-nav__link">
         
   
   
@@ -1335,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../writeups/root-me/sql-injection.md" class="md-nav__link">
+      <a href="../sql-injection.md" class="md-nav__link">
         
   
   
@@ -1366,7 +1380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../test.md" class="md-nav__link">
+      <a href="../../../test.md" class="md-nav__link">
         
   
   
@@ -1389,7 +1403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../test.md" class="md-nav__link">
+      <a href="../../../test.md" class="md-nav__link">
         
   
   
@@ -1416,20 +1430,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -1445,7 +1457,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Cheatsheets
@@ -1456,32 +1468,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    NMAP
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../cheatsheets/nmap/" class="md-nav__link">
         
   
   
@@ -1492,53 +1482,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#scanning-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Scanning Options
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧾 Output Options
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Performance Options
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1596,7 +1539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../test.md" class="md-nav__link">
+      <a href="../../../test.md" class="md-nav__link">
         
   
   
@@ -1626,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
+      <a href="../../../about/" class="md-nav__link">
         
   
   
@@ -1661,41 +1604,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#scanning-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Scanning Options
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧾 Output Options
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Performance Options
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1710,196 +1618,31 @@
 
 
 
-<h1 id="nmap-cheatsheet-scanning-output-performance">🛰️ Nmap Cheatsheet – Scanning, Output &amp; Performance</h1>
-<h2 id="scanning-options">🔍 Scanning Options</h2>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>10.10.10.0/24</code></td>
-<td>Target network range.</td>
-</tr>
-<tr>
-<td><code>-sn</code></td>
-<td>Disables port scanning.</td>
-</tr>
-<tr>
-<td><code>-Pn</code></td>
-<td>Disables ICMP Echo Requests.</td>
-</tr>
-<tr>
-<td><code>-n</code></td>
-<td>Disables DNS Resolution.</td>
-</tr>
-<tr>
-<td><code>-PE</code></td>
-<td>Ping scan using ICMP Echo Requests.</td>
-</tr>
-<tr>
-<td><code>--packet-trace</code></td>
-<td>Shows all packets sent and received.</td>
-</tr>
-<tr>
-<td><code>--reason</code></td>
-<td>Displays the reason for a specific result.</td>
-</tr>
-<tr>
-<td><code>--disable-arp-ping</code></td>
-<td>Disables ARP Ping Requests.</td>
-</tr>
-<tr>
-<td><code>--top-ports=&lt;num&gt;</code></td>
-<td>Scans top <code>&lt;num&gt;</code> most common ports.</td>
-</tr>
-<tr>
-<td><code>-p-</code></td>
-<td>Scan all ports.</td>
-</tr>
-<tr>
-<td><code>-p22-110</code></td>
-<td>Scan ports between 22 and 110.</td>
-</tr>
-<tr>
-<td><code>-p22,25</code></td>
-<td>Scan specific ports (22 and 25).</td>
-</tr>
-<tr>
-<td><code>-F</code></td>
-<td>Scan top 100 ports.</td>
-</tr>
-<tr>
-<td><code>-sS</code></td>
-<td>TCP SYN scan.</td>
-</tr>
-<tr>
-<td><code>-sA</code></td>
-<td>TCP ACK scan.</td>
-</tr>
-<tr>
-<td><code>-sU</code></td>
-<td>UDP scan.</td>
-</tr>
-<tr>
-<td><code>-sV</code></td>
-<td>Detect service versions.</td>
-</tr>
-<tr>
-<td><code>-sC</code></td>
-<td>Run default script scan.</td>
-</tr>
-<tr>
-<td><code>--script &lt;script&gt;</code></td>
-<td>Run specific scripts.</td>
-</tr>
-<tr>
-<td><code>-O</code></td>
-<td>OS detection.</td>
-</tr>
-<tr>
-<td><code>-A</code></td>
-<td>Aggressive scan (OS, version, traceroute).</td>
-</tr>
-<tr>
-<td><code>-D RND:5</code></td>
-<td>Use 5 random decoys.</td>
-</tr>
-<tr>
-<td><code>-e</code></td>
-<td>Specify network interface.</td>
-</tr>
-<tr>
-<td><code>-S 10.10.10.200</code></td>
-<td>Specify source IP address.</td>
-</tr>
-<tr>
-<td><code>-g</code></td>
-<td>Specify source port.</td>
-</tr>
-<tr>
-<td><code>--dns-server &lt;ns&gt;</code></td>
-<td>Use specific DNS server.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="output-options">🧾 Output Options</h2>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>-oA filename</code></td>
-<td>Output in all formats (normal, grepable, XML) with base name.</td>
-</tr>
-<tr>
-<td><code>-oN filename</code></td>
-<td>Output in normal format.</td>
-</tr>
-<tr>
-<td><code>-oG filename</code></td>
-<td>Output in grepable format.</td>
-</tr>
-<tr>
-<td><code>-oX filename</code></td>
-<td>Output in XML format.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="performance-options">⚙️ Performance Options</h2>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>--max-retries &lt;num&gt;</code></td>
-<td>Set number of retries per port.</td>
-</tr>
-<tr>
-<td><code>--stats-every=5s</code></td>
-<td>Show status every 5 seconds.</td>
-</tr>
-<tr>
-<td><code>-v</code> / <code>-vv</code></td>
-<td>Verbose / very verbose output.</td>
-</tr>
-<tr>
-<td><code>--initial-rtt-timeout 50ms</code></td>
-<td>Set initial RTT timeout.</td>
-</tr>
-<tr>
-<td><code>--max-rtt-timeout 100ms</code></td>
-<td>Set maximum RTT timeout.</td>
-</tr>
-<tr>
-<td><code>--min-rate 300</code></td>
-<td>Minimum number of packets per second.</td>
-</tr>
-<tr>
-<td><code>-T &lt;0–5&gt;</code></td>
-<td>Timing template (0 = paranoid, 5 = insane).</td>
-</tr>
-</tbody>
-</table>
+<h1 id="but">But</h1>
+<p>"tromper" l'admin</p>
+<h1 id="fourni">Fourni</h1>
+<p>page de login avec logs de connection</p>
+<p>![[Pasted image 20241013131643.png]]</p>
+<h1 id="methode-de-resolution">Méthode de résolution</h1>
+<p>j'ai compris ce qu'Ã©tait une crlf, mais il n'etait pas possible (ou ne semblait pas possible) d'injecter quoi ce que soit qui soit lu et interprÃ©tÃ© par la page PHP</p>
+<p>http://challenge01.root-me.org/web-serveur/ch14/?username=guest%20authenticated.%0D%0Ahehe&amp;password=admin</p>
+<p>ceci affichait cela : </p>
+<p>![[Pasted image 20241013131803.png]]</p>
+<p>il fallait juste montrer que quelqu'un s'est connectÃ© </p>
+<p>j'ai du trichÃ© parce qu'en fait j'avais rÃ©ussi mais pas a la maniÃ¨re que le site voulais donc je n'avais pas le flag</p>
+<p>![[Pasted image 20241013131901.png]]</p>
+<p>notamment la ou je n'avait rien mis apres le crlf </p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Challenge pas top, ne semble pas vraiment rÃ©aliste et le flag repose sur une syntaxe qui a mon sens est un peu arbitraire.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1942,10 +1685,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
