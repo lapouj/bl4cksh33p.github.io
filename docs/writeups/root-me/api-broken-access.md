@@ -1,3 +1,5 @@
+<script src="/js/password-protect.js"></script>
+
 ---
 categorie: web-serveur
 tags:
@@ -5,7 +7,6 @@ tags:
   - "#informatique/cyber"
 lien:
 ---
-
 
 # But
 
