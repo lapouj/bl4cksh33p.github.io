@@ -24,5 +24,7 @@ Discovered open port 21/tcp on 74.234.198.209
 Discovered open port 443/tcp on 74.234.198.209
 Discovered open port 80/tcp on 74.234.198.209
 
-![[CTH THCON Challenge Challenge NeoPrivsec 1.png]]![[CTH THCON Challenge Challenge NeoPrivsec 2.png]]![[CTH THCON Challenge Challenge NeoPrivsec 3.png]]![[CTH THCON Challenge Challenge NeoPrivsec 4.png]]
-
+![CTH THCON Challenge NeoPrivsec 1](../../images/CTH%20THCON%20Challenge%20Challenge%20NeoPrivsec%201.png)
+![CTH THCON Challenge NeoPrivsec 2](../../images/CTH%20THCON%20Challenge%20Challenge%20NeoPrivsec%202.png)
+![CTH THCON Challenge NeoPrivsec 3](../../images/CTH%20THCON%20Challenge%20Challenge%20NeoPrivsec%203.png)
+![CTH THCON Challenge NeoPrivsec 4](../../images/CTH%20THCON%20Challenge%20Challenge%20NeoPrivsec%204.png)

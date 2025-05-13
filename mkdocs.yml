@@ -60,7 +60,7 @@ nav:
     - TryHackMe:
       - Gobuster RCE challenge: writeups/THM/Gobuster RCE challenge.md
     - CTF:
-      - THCON 25 CTF - Challenge NeoPrivsec: writeups/THM/THCON 25 CTF - Challenge NeoPrivsec.md
+      - THCON 25 CTF - Challenge NeoPrivsec: writeups/CTF/THCON 25 CTF - Challenge NeoPrivsec.md
     - Conférences:
       - Supply chain security in Kubernetes: writeups/conference/Supply chain security in Kubernetes.md
       - Tapping into the SCCM policies goldmine - exploiting SCCM policies distribution for credentials harvesting: writeups/conference/Tapping into the SCCM policies goldmine - exploiting SCCM policies distribution for credentials harvesting.md
