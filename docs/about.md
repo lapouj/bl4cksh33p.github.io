@@ -1,4 +1,4 @@
-# À propos de Bl4ckSh33p
+# <span class="typewriter">À propos de Bl4ckSh33p</span>
 
 <style>
 body {
@@ -11,13 +11,40 @@ h1, h2, h3 {
   font-family: 'Courier New', monospace;
   color: #00ffcc;
   text-shadow: 0 0 5px #00ffcc;
-  animation: flicker 1.5s infinite alternate;
 }
 
-@keyframes flicker {
-  0% { opacity: 1; }
-  50% { opacity: 0.8; }
-  100% { opacity: 1; }
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #00ffcc;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00ffcc; }
+}
+
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  color: #00ffcc;
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0% { content: '█'; }
+  20% { text-shadow: 1px 0 red; transform: translateX(-1px); }
+  40% { text-shadow: -1px 0 blue; transform: translateX(1px); }
+  60% { text-shadow: 1px 0 lime; transform: translateX(-1px); }
+  80% { text-shadow: -1px 0 magenta; transform: translateX(1px); }
+  100% { text-shadow: 0 0 0; transform: translateX(0); }
 }
 
 .member-card {
@@ -43,8 +70,8 @@ h1, h2, h3 {
 }
 </style>
 
-Nous sommes une équipe passionnée de **CTF**, **pentest** et **cybersécurité offensive**.  
-Chacun apporte sa spécialité au troupeau noir.
+<p class="glitch-text">Nous sommes une équipe passionnée de <strong>CTF</strong>, <strong>pentest</strong> et <span class="glitch-text">cybersécurité offensive</span>.</p>
+<p>Chacun apporte sa spécialité au <span class="glitch-text">troupeau noir</span>.</p>
 
 <p align="center">
   <img src="../images/blacksheep_gif.gif" alt="Bl4ckSh33p" width="70%" style="border-radius: 16px; box-shadow: 0 0 20px #00ffcc;"/>
