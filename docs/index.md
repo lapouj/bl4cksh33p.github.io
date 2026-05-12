@@ -5,8 +5,8 @@
 </p>
 
 
-Bienvenue sur le site officiel de l'équipe **Bl4ckSh33p**.  
-Nous sommes une équipe passionnée de **CTF**, **hacking éthique** et **formation en cybersécurité offensive**.
+Bienvenue sur le site officiel de l'équipe **Bl4ckSh33p** x groupe **AutoFormation technique** Ynov.  
+Nous sommes une équipe passionnée de **CTF**, **hacking éthique** et **formation en cybersécurité offensive** et mettons en commun nos notes avec notre équipe YDays.
 
 > *"We are not the herd."*
 
@@ -16,10 +16,5 @@ Nous sommes une équipe passionnée de **CTF**, **hacking éthique** et **format
 - Participer à des CTFs (Capture The Flag) en équipe
 - Créer des contenus de formation pour les pentests
 - Partager nos writeups, astuces et méthodologies
+- Gagner en compétences
 
----
-
-## 📚 Explorez
-- 🔍 [Writeups](writeups/)
-- 🛠️ [Cheatsheets & Notes](cheatsheets/)
-- 🧠 [Pentest Training](training/)
