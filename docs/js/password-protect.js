@@ -2,7 +2,7 @@
   const allowed = sessionStorage.getItem("writeups_access");
   if (allowed === "true") return;
 
-  const hashToMatch = "894b64b42c9df00b814e871775942d4be32a88acf47ed3e7640e36767639acf6"; // SHA-256 du mot de passe
+  const hashToMatch = "73071035dc69effe38bb59037523dc82a656cd8b28ae5119dd763fb48fbb6e97"; // SHA-256 du mot de passe
 
   const password = prompt("Entrez le mot de passe pour accéder aux Writeups :");
   if (!password) {
